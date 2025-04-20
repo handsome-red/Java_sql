@@ -1,6 +1,6 @@
 -- Создание таблицы преподавателей
 CREATE TABLE teachers (
-    teacher_id INT PRIMARY KEY SERIAL,
+    teacher_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     middle_name VARCHAR(50)
@@ -8,7 +8,7 @@ CREATE TABLE teachers (
 
 -- Создание таблицы курсов
 CREATE TABLE courses (
-    course_id INT PRIMARY KEY SERIAL,
+    course_id SERIAL PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
     description TEXT,
     teacher_id INT NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE courses (
 
 -- Создание таблицы студентов
 CREATE TABLE students (
-    student_id INT PRIMARY KEY SERIAL,
+    student_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     middle_name VARCHAR(50)
